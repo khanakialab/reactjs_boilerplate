@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html {{htmlAttributes}}>
+<head>
+    {{headStartCustomCode}}
+    {{title}}
+    {{meta}}
+    {{link}}
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   
+    <script>
+        window.__INITIAL_DATA__ = {{data}};
+    </script>
+    {% for href in cssHrefs %}
+         <link rel="stylesheet" href="{{href}}" />
+    {% endfor %}
+       
+</head>
+
+<body class="{{bodyClass}}" {{bodyAttributes}}>
+    <div id="app">{{markup}}</div>
+    {% for script in scripts %}
+        <script src="{{script}}" type="text/javascript"></script>
+    {% endfor %}
+   
+</body>
+</html>

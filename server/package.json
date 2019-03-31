@@ -1,0 +1,66 @@
+{
+  "name": "server",
+  "version": "0.0.1",
+  "description": "A Node.js Server Boilerplate",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "NODE_PATH=../:./ ./node_modules/nodemon/bin/nodemon.js index.js",
+    "start1": "NODE_PATH=../:./ ./node_modules/nodemon/bin/nodemon.js index.js --exec babel-node --presets es2015,stage-2 --plugins=add-module-exports",
+    "debug": "prompt=1 NODE_PATH=../:./ babel-node index.js --presets es2015,stage-2 --plugins=add-module-exports",
+    "build": "babel src -d dist",
+    "serve": "node dist/index.js",
+    "test": "mocha --compilers js:babel-register"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "test/*",
+      "docs/*"
+    ],
+    "watch": [
+      "../@jeoga",
+      "./"
+    ]
+  },
+  "author": "Aman Khanakia <aman@knesk.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@knesk/auth": "^0.0.1",
+    "@knesk/hook": "^0.0.1",
+    "@knesk/joi": "^0.0.2",
+    "@knesk/util": "^0.0.2",
+    "@knesk/www": "^0.0.1",
+    "apollo-server": "^2.4.8",
+    "apollo-server-express": "^2.4.8",
+    "bson": "^4.0.2",
+    "config": "^3.0.1",
+    "extend": "^3.0.2",
+    "graphql": "^14.2.1",
+    "graphql-tools": "^4.0.4",
+    "joi": "^14.3.1",
+    "xml2json": "^0.11.2"
+  },
+  "devDependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "commander": "^2.19.0",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.16.4",
+    "inquirer": "^6.2.2",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.11",
+    "mocha": "^6.0.2",
+    "moment": "^2.24.0",
+    "mongodb": "^3.2.2",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.1",
+    "mysql": "^2.16.0",
+    "nodemailer": "^6.0.0",
+    "nodemon": "^1.18.10",
+    "request": "^2.87.0",
+    "request-promise": "^4.2.4",
+    "twig": "^1.13.2",
+    "uuid": "^3.3.2",
+    "winston": "^3.2.1",
+    "winston-logs-display": "^1.0.0"
+  }
+}

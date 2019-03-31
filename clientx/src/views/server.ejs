@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <%- headStartCustomCode %>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   
+    <script>
+        window.__INITIAL_DATA__ = <%- data %>;
+        </script>
+     <% cssHrefs.forEach(function(href) { %>
+         <link rel="stylesheet" href="<%= href %>" />
+    <% }); %>
+       
+</head>
+
+<body class="<%- bodyClass %>">
+    <div id="app"><%- markup %></div>
+     <% scripts.forEach(function(script) { %>
+         <script src="<%= script %>" type="text/javascript"></script>
+    <% }); %>
+   
+</body>
+</html>
