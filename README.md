@@ -1,10 +1,10 @@
-# Sapp - A Reactjs Client and Server Boilerplate &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/knesklab/util/blob/master/LICENSE)
+# Sapp - A Reactjs Client and Server Boilerplate &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/knesklab/reactjs_boilerplate/blob/master/LICENSE)
 
 #### A Client and Server React.js Boilerplate with Server Side Rendering
 
 #### How are we different ?
 * You can create many subapplication within on applicaiton so you do not have to initialize different boilerplate for multiple application
-* Let say i have Member and Admin Dasbhoard so i can create the as two different modules or subapps with their own urls <br/>
+* Let say i have Member and Admin Dasbhoard so i can create them as two different modules or subapps with their own urls <br/>
 Server API - http://localhost:7001<br/>
 Admin - http://localhost:7002<br/>
 Member - http://localhost:7003<br/>
